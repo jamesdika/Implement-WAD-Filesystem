@@ -1,0 +1,6 @@
+In this project, I created a C++ program that implemented a WAD filesystem on an Operating System called Reptilian.
+My program took in a path to a WAD file. A WAD file is a filesystem used in the game Doom. 
+My program then allowed me to read the contents of the filesystem by manipulating the bytes in the WAD file. 
+Utilizing the fuse library, I created a daemon that calls my project ("project3.cpp" and "wad.h").
+This daemon is what implements the filesystem. It runs in the background, and whenever I make a command such as "cd"
+or "ls", it calls functions within my project that return the data necessary to perform that command. 
